@@ -9,7 +9,7 @@ func add_fruta():
 	var inst = fruta.instance()#se guarda la instancia de
 	#la fruta en inst
 	
-	inst.position = Vector2(get_random_number(900,50),get_random_number(500,50))
+	inst.position = Vector2(get_random_number(300,30),get_random_number(150,30))
 	inst.connect("fruta_comida",self,"spawn_next_fruta_and_cola")
 	add_child(inst)
 	# se genera una posicion aleatoria del origen del fruto

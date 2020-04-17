@@ -4,17 +4,19 @@
 [ext_resource path="res://Character/Player/cabezaCulebra.png" type="Texture" id=2]
 [ext_resource path="res://Character/Player/cabezaCulebra2.png" type="Texture" id=3]
 
-
-
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10.4398, 9.91388 )
 
 [node name="Culebra" type="Node2D"]
-position = Vector2( 443.915, 239.102 )
+position = Vector2( 176.556, 88.5055 )
+scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Cabeza" type="Area2D" parent="."]
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite" type="Sprite" parent="Cabeza"]
 position = Vector2( 0.649652, 4.05938 )

@@ -1,7 +1,7 @@
 extends Node2D #CABEZA
 
 var direccion = Vector2(1,0)
-const gap = -35
+const gap = -20
 var next_cola_dir = Vector2(1,0)
 var prev_dir = Vector2(1,0)
 
@@ -20,10 +20,13 @@ func _process(delta):
 		direccion=Vector2(0,-1)
 	elif(Input.is_action_just_pressed("ui_down")):
 		direccion=Vector2(0,1)
+		#rotation=deg2rad(90)
 	elif(Input.is_action_just_pressed("ui_left")):
 		direccion=Vector2(-1,0)
+		#rotation=deg2rad(180)
 	elif(Input.is_action_just_pressed("ui_right")):
 		direccion=Vector2(1,0)
+		#rotation=deg2rad(0)
 	mover_culebra()
 
 func mover_culebra():  
@@ -60,7 +63,7 @@ func add_cola():
 
 func _on_Cabeza_area_entered(area):
 	pass # Replace with function body.
-	if(area.name=="Alimento"):
+	if(area.name=="Alimento" || area.name=="Enemigo"):
 		$Cabeza/Sprite.visible = false
 		$Cabeza/Sprite2.visible=true
 	else:
