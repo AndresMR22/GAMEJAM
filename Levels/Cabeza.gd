@@ -15,6 +15,7 @@ func _ready():
 	
 func _process(delta):
 	pass
+	print("Cabeza ", $Cabeza)
 	if(Input.is_action_just_pressed("ui_up")):
 		pass
 		direccion=Vector2(0,-1)

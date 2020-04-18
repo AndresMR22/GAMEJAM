@@ -14,7 +14,7 @@ scale = Vector2( 0.916143, 0.688284 )
 texture = ExtResource( 3 )
 centered = false
 
+[node name="Enemigo" parent="." instance=ExtResource( 4 )]
+
 [node name="Culebra" parent="." instance=ExtResource( 1 )]
 position = Vector2( 159.15, 85.1934 )
-
-[node name="Enemigo" parent="." instance=ExtResource( 4 )]
